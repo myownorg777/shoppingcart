@@ -1,9 +1,5 @@
 <?php
 session_start();
-//$response = $category->insertCategory($name,$description,$Tax);
- 
- //print_r($response);
-//echo "hiiiiii";
 $chkBoxArr = array(1,2,3);
 
  $data=array(
