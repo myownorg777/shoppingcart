@@ -1,0 +1,44 @@
+﻿REST API for shopping Cart
+
+Developed By :
+
+Shr
+Version :
+
+1.0
+File Structure :
+
+1) includes/class.database.php : database connection using Singleton File
+
+2) shoppingcart.sql : Database File.
+
+3) api/products.php : product class file which contains related methods for database operations, add,update.
+
+3) api/category.php : category class file which contains related methods for database operations, add,update.
+
+3) api/cart.php : cart class file which contains related methods for database operations, add,update.
+
+Requirements :
+
+1) PHP Version : 5.0 and above
+
+Sample Code
+
+1) Add Product
+
+$data=array(
+		'name' =>'product Name',
+		'price' => 1000,
+		'discount' =>30,		'
+		'description' => 'product description',
+		'category_id' =>1		
+);
+
+$url = 'http://localhost/shoppingcart/Add_Product.php';
+
+Post data array to this url using curl. It will add product into database
+
+Response : 
+On success -> {"result":"1","message":"Success"}
+on Failure -> {"result":0,"message":"Error!"}
+					      
